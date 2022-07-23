@@ -1,0 +1,183 @@
+/* Fuente de letras */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+html, body {
+  width: 100%;
+  height: 100vh;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #1D1F22;
+}
+
+/* estilos heder*/
+header {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+/*fin del heder*/
+/*logo*/
+.logo {
+  width: 8rem;
+  height: 7.5rem;
+  color: white;
+}
+
+/*fin logo*/
+/*menu de navegacion*/
+.navbar ul {
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  padding-right: 5rem;
+}
+
+.navbar ul li {
+  padding: 0.7rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar ul li a:visited {
+  color: #1D1F22;
+}
+
+/*fin del menu de navegacion*/
+/* Uso de borders */
+.navbar ul li a:hover {
+  color: rgb(24, 219, 66);
+  border: 1px solid rgb(23, 202, 32);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+/* estilos footer*/
+footer {
+  margin-top: auto;
+  align-self: center;
+}
+
+.te-suena {
+  color: rgb(52, 81, 188);
+}
+
+/*estilo index pricipal*/
+.main-principal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #dfeaf5;
+}
+
+.texto-banner {
+  width: 350px;
+  padding-left: 70px;
+}
+
+.imagen-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagen-banner img {
+  height: 100%;
+  width: 100%;
+}
+
+/*fin del index principal*/
+/*texto html nosotro*/
+.textp {
+  text-align: center;
+  padding-left: 300px;
+  padding-right: 300px;
+  color: rgb(0, 85, 85);
+}
+
+h2 {
+  text-align: center;
+}
+
+/*discografia stile*/
+.disc div {
+  border: black 3px solid;
+  overflow: auto;
+}
+
+/*ubicacion  img*/
+img {
+  float: left;
+  height: 150px;
+  width: 150px;
+}
+
+/*ubicacion parrafo*/
+.disc p {
+  color: rgb(0, 0, 0);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.galeri {
+  display: grid;
+  flex-wrap: nowrap;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 5px;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+#grilla {
+  display: grid;
+  grid-template-areas: "contac contacws" "contac contacws" "fot fot";
+  grid-template-columns: auto, 300px;
+  grid-template-rows: auto, auto, 80px;
+  grid-row-gap: 5px;
+  grid-column-gap: 10px;
+  width: 100%;
+  height: 100vh;
+}
+
+section#contacws {
+  grid-area: contac;
+}
+
+section#contac {
+  grid-area: contacws;
+}
+
+footer#fot {
+  grid-area: fot;
+  text-align: center;
+}
+
+.animate__animated {
+  animation: zoomIn;
+  animation-duration: 40s;
+}
+
+@media screen and (max-width: 600px) {
+  html, body, .navbar ul {
+    float: none;
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

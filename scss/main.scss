@@ -1,7 +1,5 @@
 /* Fuente de letras */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
-@import "footer";
-@import "global/header"
 
 html,body{
     width: 100%;
@@ -35,6 +33,7 @@ header {
 .logo {
     width: 8rem;
     height: 7.5rem;
+    color:white;
 }
 /*fin logo*/
 

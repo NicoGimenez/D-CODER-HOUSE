@@ -1,9 +1,10 @@
  
   /* Create four equal columns that floats next to each other */
   .column {
-    float: left;
-    width: 25%;
-    padding: 20px;
+    float: center;
+    width:20%;
+    padding: 50px;
+    
   }
   
   /* Clear floats after the columns */
@@ -16,7 +17,7 @@
   /* On screens that are 992px wide or less, go from four columns to two columns */
   @media screen and (max-width: 992px) {
     .column {
-      width: 50%;
+      width: 100%;
     }
   }
   
@@ -35,7 +36,9 @@
 
   /* Footer */
 .footer {
-    padding: 20px;
+    
     text-align: center;
     background: #ddd;
+    grid-area: fot; 
+    
   }
